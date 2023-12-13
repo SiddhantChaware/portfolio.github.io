@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83376d9fd1.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo" />
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span style="color: #ff004f;">Siddhant</span> Chaware</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------About------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user_pic.jpeg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>An aspiring software engineer with knowledge in software engineering practices such as coding,
+                        testing, code reviews, code comments, etc. Strong ability to communicate with clients and
+                        ability to express ideas clearly and concisely.</p>
+
+                    <div class="tab-title">
+
+                        <p class="tab-link active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>B/tech at Government College of Engineering,Yavatmal
+                            </li>
+                            <li><span>2017 - 2019</span><br>Higher Secondary School at Bhalerao Jr. Science
+                                College,Saoner</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July 23 - Current</span><br>[Internship] Full Stack Development at Palle
+                                Institute,Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Skills--------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="subtitle">My SKills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java</h2>
+                    <p> > Brief knowledge about Core JAVA and also advance Java. <br> > Strong Concepts of
+                        Object-Oriented Programming. <br>> Problem solving skill.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Python</h2>
+                    <p> > Object-Oriented Programming Concept <br> > Writting and Execution practice in Machine Learning
+                        using Python. <br> > Knowledge about Django web Framework. </p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Technology</h2>
+                    <p> > HTML and CSS <br> > Different small projects using HTML , CSS and JS <br> > Web Development
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------Project------>
+
+    <div id="project">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/sorting_project 1.jpg">
+                    <div class="layer">
+                        <h3>Sorting Visualizer</h3>
+                        <p>• Designed and implemented a dynamic sorting visualizer using Python, showcasing the
+                            functionality of popular
+                            sorting algorithms.<br>• Integrated a user-friendly graphical interface to visualize the
+                            step-by-step execution of sorting algorithms.<br>• Implemented Merge Sort for its efficiency
+                            and Bubble Sort for educational purposes, providing a comparative
+                            view of the performance and differences between these algorithms.</p>
+                        <a href="https://github.com/SiddhantChaware"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/portfolio_project2.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>• Personal Portfolio website can help you in Establish a professional online presence.<br>•
+                            It Display your work in a visually appealing way.<br>• Attract potential clients, employers,
+                            and collaborators who are looking for someone with your skills and expertise. <br>• Your
+                            website can act as a showcase for your work, making it easier for people to understand your
+                            capabilities.</p>
+                        <a href="https://github.com/SiddhantChaware"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project3.png">
+                    <div class="layer">
+                        <h3>More Projects</h3>
+                        <p>• Build the project using Django Web Framework. <br>• For practice purpose made projects
+                            using HTML,CSS and JavaScript. <br> •Project Name are: <br> 1. Age Calculator <br>2. Weather
+                            Forecast <br>3. Amazon Clone <br>3. Digital Clock.</p>
+                        <a href="https://github.com/SiddhantChaware"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!----------Contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>siddhantchaware999@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7498720778</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/SiddhantChaware"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/siddhant-chaware-a3007a244/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/Siddhant_Chaware/"><iconify-icon
+                                icon="simple-icons:leetcode"></iconify-icon></a>
+                        <a href="https://www.codingninjas.com/studio/profile/f5bf1a9e-1552-4be2-9462-9158d8747770"><i
+                                class="fa-solid fa-terminal"></i></a>
+                    </div>
+                    <a href="images/Siddhant_Chaware_CV.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your Name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw95fQgEG5Y-pCMt8MFC4OrH-BjVwmSqnd9FVNok0pgoF4cEwPvZ3oWi8zzkJm_rm6I/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent to Siddhant Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
